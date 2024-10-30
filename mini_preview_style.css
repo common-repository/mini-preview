@@ -1,0 +1,165 @@
+/*
+Mini Preview
+
+Author: Gareth Hadfield
+Author URI: https://opdiv.com/mini-preview
+
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+body{
+	margin:0px;
+}
+
+#mini-preview-meta-box{
+	overflow:hidden;
+}
+
+
+body{
+	--help-box-color:#a0a0c0;
+}
+
+div.mini-preview-help{
+	border:solid var(--help-box-color) 4px;
+	right:0px;
+	border-radius:4px;
+	background-color:var(--help-box-color);
+}
+
+.mini-preview-help>div{
+	right:0px;
+	padding:1em;
+}
+
+.mini-preview-help ul{
+	list-style:unset;
+	padding-left:1em;
+}
+
+.mini-preview-help>div:first-child{
+}
+
+.mini-preview-help>div:last-child{
+	border-radius: 2px;
+	background-color:#f0f0f1;
+}
+
+.mini-preview-help>div:first-child h3{
+	margin:0px;
+	color:#f0f0f1;
+}
+
+.mini-preview-meta-preview-container{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.mini-preview-meta-buttons{
+	margin-bottom:16px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+.mini-preview-meta-buttons *.button{
+	margin-right:2px;
+	border:none;
+	min-width:34px;
+	text-align:center;
+	background-color:#ffffff;
+}
+
+.mini-preview-meta-buttons *.button:hover{
+	background-color:#f0f0f0;
+}
+
+.mini-preview-desktop1-button{
+	font-size:9px!important;
+	padding-top:2px!important;
+}
+
+.mini-preview-desktop2-button{
+	font-size:11px!important;
+	padding-top:2px!important;
+}
+
+.mini-preview-desktop3-button{
+	font-size:13px!important;
+}
+
+.mini-preview-meta-preview-div{
+	margin:auto;
+	box-shadow:0px 0px 15px #000000;
+	position:relative;
+}
+
+.mini-preview-iframe{
+	position:absolute;
+	background-color:#ffffff;
+	transform-origin:top left;
+}
+
+/* Loader Spinner */
+
+body{
+	--loader-line-width:16px;
+	--loader-width:100px;
+	--loader-ring-color:#f0f0f0;
+	--loader-bar-color:#4e9ad0;
+}
+
+.loader{
+	border:var(--loader-line-width) solid var(--loader-ring-color);
+	border-top:var(--loader-line-width) solid var(--loader-bar-color);
+	border-radius:50%;
+	width:var(--loader-width);
+	height:var(--loader-width);
+	animation:spin 2s linear infinite;
+	position:absolute;
+	top:calc(50% - (var(--loader-width) / 2) - var(--loader-line-width));
+	left:calc(50% - (var(--loader-width) / 2) - var(--loader-line-width));
+}
+
+@keyframes spin{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+#miniPreviewScreenMenu{
+	border:solid $f0f0f0 1px;
+	border-radius:4px;
+	box-shadow:0px 0px 5px #000000;
+	background-color:#ffffff;
+	display:none;
+	position:absolute;
+	z-index:3;
+	max-width:90%;
+	padding:4px;
+}
+
+.mini-preview-resolution-button{
+	padding-right:0px!important;
+	padding-left:0px!important;
+	width:16px!important;
+	min-width:16px!important;
+}
+
+.mini-preview-screen-button:not(#mini-preview-next-resolution-button){
+	min-width:110px!important;
+}
+
+.mini-preview-res-text{
+	font-size:0.75rem;
+	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.mini-preview-selected{
+	background-color:#f0f0f0!important;
+}
